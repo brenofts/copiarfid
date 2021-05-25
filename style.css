@@ -1,0 +1,158 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2.0pt;
+    margin-left: 30px;
+    user-select: none;
+}
+
+.pagina, .hidden, #opcoes {
+    display: none;
+    flex-direction: column;
+    width: fit-content;
+}
+
+form {
+    display: block;
+}
+
+input {
+    margin: 15px;
+    text-align: center;
+}
+
+select {
+    font-size: 12pt;
+    padding: 5px;
+}
+
+fieldset {
+    border-radius: 5px;
+    border: lightgray solid 1px;
+}
+
+button {
+    padding: 5px 12px 5px 12px;
+    font-size: 13pt;
+    font-family: monospace;
+    box-shadow: lightgray 3px 4px;
+    margin: 0px 4px 0px 4px;
+}
+
+.menu {
+    display: inline;
+    width: fit-content;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.menu-oculto {
+    display: none;
+    width: fit-content;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#inputTagTP {
+    pointer-events: none;
+    user-select: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+}
+
+#alert {
+    display: none;
+    background-color: rgb(66, 168, 66);
+    padding: 10px;
+    margin: 3px;
+    border: 2px solid black;
+    color: white;
+    font-size: 20pt;
+    width: 60%;
+    box-shadow: gray 5px 5px;
+}
+
+#falhaLeitor {
+    color: red
+}
+
+.grid-transporte{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+
+.grid-transporte-item {
+    background-color:darkorange;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    text-align: center;
+    margin: 1px;
+}
+
+#grid-inicio {
+    margin-top: 5vw;
+}
+
+.grid-container-inicio {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+[class*='item-inicio'] {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 8px 10px 8px 10px;
+    font-size: 2vw;
+    text-align: center;
+    margin: 1px;
+    width: 18vw;
+    height: 5vw;
+}
+
+[class*='item-inicio']:hover {
+    color: white
+}
+
+.item-inicio-red{
+    background-color: red;
+}
+
+.item-inicio-green{
+    background-color: green;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px;
+}
+
+[class*='grid-item-'] {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    margin: 1px;
+    cursor: pointer;
+    background-color: ghostwhite;
+}
+
+[class*='grid-item-']:hover {
+    opacity: 90%;
+    color: gray;
+}
+
+.grid-item-devolvido {
+    background-color: blue;
+}
+.grid-item-emuso {
+    background-color: yellow;
+}
+.grid-item-bloqueado {
+    background-color: grey;
+    color: lightgray
+}
